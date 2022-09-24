@@ -25,5 +25,7 @@ for (out = numMenor +1; out < numMaior; out++) {
     numeros.push(out);
 }
 console.log(numeros);
-const soma = numeros.reduce((acumulator, out) => acumulator += out);
-console.log(`\nTotal: ${soma}`);
+
+const soma = (acumulator, out) => acumulator += out;
+
+console.log(`\nTotal: ${numeros.reduce(soma)}`);
